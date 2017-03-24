@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "snake.py", 0, True

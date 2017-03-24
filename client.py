@@ -108,7 +108,14 @@ def show_games(): #Give list of games
             file.close()
             send_txt('gamestart~' + flags['username'] + ' just started a new game of Snake!')
             messages.insert(0, 'You just started a new game of Snake!')
-            os.system('py snake.py') #Run program
+            os.system('snake.vbs') #Run program
+            time.sleep(2)
+            cont = False
+            while not cont:
+                file = open('sharefile.txt')
+                if not file.read() == 'No score':
+                    cont = True
+                file.close()
             try:
                 file = open('sharefile.txt', 'r')
                 fc = file.read()
@@ -421,6 +428,7 @@ def toggle_ontop(ontop_arg):
 
 root = tk.Tk()
 root.title('Messaging')
+root.iconphoto(True, tk.PhotoImage(file='icon.gif'))
 root.configure(background=colours.superlight)
 root.bind(sequence='<Return>', func=send_msg) #Not recommended
 

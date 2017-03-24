@@ -12,6 +12,7 @@ file.close()
 
 root = tk.Tk()
 root.title('Messaging Launcher')
+root.iconphoto(True, tk.PhotoImage(file='icon.gif'))
 
 def launch():
     flags['theme'] = theme_name_entry.get()

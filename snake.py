@@ -4,6 +4,10 @@ import time, threading, random, winsound
 
 #Snake game - David Juckes
 
+file = open('sharefile.txt', 'w')
+file.write('No score')
+file.close()
+
 snake_root = tk.Tk()
 snake_root.title('Snake')
 
