@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "client.py", 0, True

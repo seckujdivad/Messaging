@@ -1,0 +1,24 @@
+How to start:
+Run the RUN_ME.vbs script
+Make sure the settings are how you want them
+Click "Launch"
+
+(of course, you can just run the client.py file, but that isn't as seamless)
+
+Join a conversation:
+In the bottom right, you will see your hostname. Give this to the person you want to talk to
+Type the other person's hostname and then click "Submit". They will need to be running the client for this to work.
+Leave the box empty to bring up the contacts window.
+Once the window starts responding, you will be connected unless you see an error message
+If you look in the server output box, you can see who is connected to you
+You can connect to as many people as you want
+
+Everything else should be labelled. Snake is under "More".
+
+Links:
+@www.google.com
+Is a link to google. Click on links in chat to open them.
+
+Commands:
+$print('suh dude')>another person>me
+Change with IPs (not hostnames) - get them in chat
